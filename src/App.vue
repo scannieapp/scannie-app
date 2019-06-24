@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TopMenu v-if="authenticated" />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import * as blockstack from "blockstack";
+import TopMenu from '@/components/TopMenu.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
+  data() {
+    return this.$store.state.UserStore;
+  },
+  methods: {
+    logout() {
+      blockstack.signUserOut(window.location.origin);
+    }
+  },
   components: {
-    HelloWorld
+    TopMenu
   }
 }
 </script>
 
 <style>
+/*@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");*/
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700");
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Heebo", "Playfair+Display", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
