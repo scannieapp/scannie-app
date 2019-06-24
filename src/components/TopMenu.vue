@@ -14,7 +14,7 @@
             <a href="https://apps.apple.com/us/app/scannie/id1456235867" style="text-decoration:none" class="text-grey-dark mh2">
               Scan with our iOS app
             </a>
-            <a href="#" @click="$refs.file.click()" style="text-decoration:none" class="green mh2">
+            <a href="#" @click="$refs.file.click()" style="text-decoration:none" class="custom-green mh2">
               Upload documents
             </a>
             <input
@@ -71,4 +71,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .custom-green {
+    color: #50E3C2;
+  }
+</style>

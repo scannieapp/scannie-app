@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-32 pt-24 pb-16 bg-white p-8 border-green-dark border-t-2">
+  <div class="mt-32 pt-24 pb-16 bg-white p-8 border-green border-t-2">
     <div class="container mx-auto text-left opacity-75 text-sm lg:px-4">
       <div
         class="flex flex-col justify-center items-start content-start md:flex-row mb-4"
@@ -9,21 +9,21 @@
           <ul class="list-reset leading-normal cursor-pointer">
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="#start"
                 >Sign In</a
               >
             </li>
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="#features"
                 >Features</a
               >
             </li>
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="https://app.co/terms"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,7 +44,7 @@
           <ul class="list-reset leading-normal cursor-pointer">
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="https://youtu.be/7SmC7AuZNWY"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@
             </li>
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="https://github.com/blockstack/gaia"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,7 +62,7 @@
             </li>
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="https://app.co/mining/apps"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +71,7 @@
             </li>
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="https://app.co/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,7 +85,7 @@
           <ul class="list-reset leading-normal cursor-pointer">
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="mailto:support@scannieapp.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -94,7 +94,7 @@
             </li>
             <li class="mb-2">
               <a
-                class="link hover:text-green-dark text-grey-darker"
+                class="link custom-green text-grey-darker"
                 href="https://github.com/orgs/scannieapp/projects/1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -167,3 +167,16 @@
     </div>
   </div>
 </template>
+
+<style>
+
+.border-green {
+  border-top-color: #50E3C2;
+}
+
+a.custom-green:hover {
+  color: #50E3C2;
+}
+
+</style>
+

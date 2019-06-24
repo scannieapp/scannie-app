@@ -17,12 +17,12 @@
           >
             <a
               href="#features"
-              class="mr-8 text-black no-underline hover:underline hover:text-green-dark hidden lg:block"
+              class="mr-8 text-black custom-green no-underline hover:underline hidden lg:block"
               rel="noopener noreferrer"
               v-smooth-scroll
               >Features</a
             >
-            <a href="#start" class="btn bg-green-dark font-bold hidden lg:block" @click="login">Access your documents</a>
+            <a class="btn custom-green-bg font-bold hidden lg:block" @click="login">Access your documents</a>
           </div>
         </transition>
       </div>
@@ -48,7 +48,7 @@
               class="mt-4 text-left text-black font-sans font-normal leading-normal opacity-75 text-sm md:text-base"
             >
               Scannie is a scanner app where you can store your documents securely.
-              It’s open-source and built on top of <a class="text-black hover:text-green-dark" href="https://blockstack.org">Blockstack</a>’s platform.
+              It’s open-source and built on top of <a class="text-black custom-green" href="https://blockstack.org">Blockstack</a>’s platform.
             </p>
             <transition appear name="fade">
               <div class="mt-6">
@@ -58,7 +58,7 @@
                   class="flex flex-col items-start content-start self-stretch"
                 > 
                   <a
-                    href="https://testflight.apple.com/join/YuXc2asc"
+                    href="https://apps.apple.com/us/app/scannie/id1456235867"
                     target="_blank"
                     class="mt-4 btn-alt pr-8"
                   >
@@ -212,3 +212,15 @@ export default {
   }
 };
 </script>
+
+<style>
+
+.custom-green-bg {
+  background-color: #50E3C2;
+}
+
+a.custom-green:hover {
+  color: #50E3C2;
+}
+
+</style>
